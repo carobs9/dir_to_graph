@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Folder Graph</title>
+  <title>dir-to-graph</title>
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
   <style>
     body { font-family: system-ui, sans-serif; margin: 0; }
@@ -16,6 +16,28 @@
     .link { fill: none; stroke: #bbb; stroke-width: 1px; }
     .node text { font-size: 12px; user-select: none; }
     .node circle { stroke: #444; stroke-width: 1px; }
+    .legend {
+      padding: 6px 16px 0 16px;
+      font-size: 12px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #444;
+    }
+    .legend-swatch {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      border: 1px solid #444;
+    }
+    .legend-swatch.folder { background: #9ccfd8; }
+    .legend-swatch.file { background: #f6c177; }
     .tooltip {
       position: fixed; pointer-events: none;
       background: rgba(20,20,20,0.92); color: #fff;
@@ -24,16 +46,42 @@
       max-width: 360px;
       line-height: 1.2;
     }
+    .footer-note {
+      position: fixed;
+      right: 12px;
+      bottom: 8px;
+      font-size: 11px;
+      color: #777;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
   </style>
 </head>
 <body>
   <header>
-    <b>Folder Graph</b>
-    <div class="hint">Click folders to expand/collapse. Hover for size.</div>
+    <b>dir-to-graph</b>
+    <span id="dir-name" style="font-size:13px; color:#444; margin-left:8px;"></span>
+    <div class="hint">Click folders to expand/collapse. Hover for details.</div>
   </header>
+
+  <div class="legend">
+    <div class="legend-item">
+      <span class="legend-swatch folder"></span>
+      <span>Folder</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-swatch file"></span>
+      <span>File</span>
+    </div>
+  </div>
 
   <svg id="viz" width="1200" height="800"></svg>
   <div id="tip" class="tooltip" style="display:none;"></div>
+  <div class="footer-note">
+    Developed by carobs9 - GitHub: https://github.com/carobs9/dir_to_graph
+  </div>
 
   <script>
     const JSON_PATH = "data.json";
@@ -54,6 +102,14 @@
 
     async function main() {
       const raw = await fetch(JSON_PATH).then(r => r.json());
+
+      // Show the analyzed directory name/path in the header
+      const dirTitle = document.getElementById("dir-name");
+      if (dirTitle && raw) {
+        const displayName = raw.name || raw.id || "(unknown directory)";
+        dirTitle.textContent = `Contents of ${displayName}`;
+        dirTitle.title = raw.id || ""; // full path on hover
+      }
 
       const svg = d3.select("#viz");
       const tip = d3.select("#tip");

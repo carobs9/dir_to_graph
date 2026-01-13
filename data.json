@@ -1,186 +1,632 @@
 {
   "type": "folder",
-  "name": "dir_to_graph",
-  "size_bytes": 185450315,
-  "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph",
+  "name": "Evangelicals",
+  "size_bytes": 8417784,
+  "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals",
   "children": [
     {
       "type": "folder",
-      "name": "folder2",
-      "size_bytes": 9,
-      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/folder2",
+      "name": "tests",
+      "size_bytes": 1846940,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests",
       "children": [
         {
           "type": "folder",
-          "name": "folder_within_folder",
-          "size_bytes": 9,
-          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/folder2/folder_within_folder",
+          "name": "classifier",
+          "size_bytes": 1251548,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/classifier",
           "children": [
             {
               "type": "file",
-              "name": "child_of_child.json",
-              "size_bytes": 9,
-              "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/folder2/folder_within_folder/child_of_child.json"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "folder",
-      "name": "lib",
-      "size_bytes": 749391,
-      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib",
-      "children": [
-        {
-          "type": "folder",
-          "name": "tom-select",
-          "size_bytes": 54104,
-          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/tom-select",
-          "children": [
-            {
-              "type": "file",
-              "name": "tom-select.complete.min.js",
-              "size_bytes": 44776,
-              "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/tom-select/tom-select.complete.min.js"
+              "name": "AH_TextEcon_6_llm_finetuning.ipynb",
+              "size_bytes": 257019,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/classifier/AH_TextEcon_6_llm_finetuning.ipynb"
             },
             {
               "type": "file",
-              "name": "tom-select.css",
-              "size_bytes": 9328,
-              "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/tom-select/tom-select.css"
-            }
-          ]
-        },
-        {
-          "type": "folder",
-          "name": "vis-9.1.2",
-          "size_bytes": 688976,
-          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/vis-9.1.2",
-          "children": [
-            {
-              "type": "file",
-              "name": "vis-network.min.js",
-              "size_bytes": 468813,
-              "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/vis-9.1.2/vis-network.min.js"
+              "name": "distilbert_example.py",
+              "size_bytes": 4712,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/classifier/distilbert_example.py"
             },
             {
               "type": "file",
-              "name": "vis-network.css",
-              "size_bytes": 220163,
-              "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/vis-9.1.2/vis-network.css"
+              "name": "classifier_model.ipynb",
+              "size_bytes": 221534,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/classifier/classifier_model.ipynb"
+            },
+            {
+              "type": "file",
+              "name": "classification.ipynb",
+              "size_bytes": 7615,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/classifier/classification.ipynb"
+            },
+            {
+              "type": "file",
+              "name": "bert_classifier_first.ipynb",
+              "size_bytes": 90109,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/classifier/bert_classifier_first.ipynb"
+            },
+            {
+              "type": "file",
+              "name": "distilbert_diy_example.py",
+              "size_bytes": 6791,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/classifier/distilbert_diy_example.py"
+            },
+            {
+              "type": "file",
+              "name": "AH_TextEcon_5_llm_features.ipynb",
+              "size_bytes": 537612,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/classifier/AH_TextEcon_5_llm_features.ipynb"
+            },
+            {
+              "type": "file",
+              "name": "distilbert_diy_example_back.py",
+              "size_bytes": 5059,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/classifier/distilbert_diy_example_back.py"
+            },
+            {
+              "type": "file",
+              "name": "classifier_evaluation.ipynb",
+              "size_bytes": 121097,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/classifier/classifier_evaluation.ipynb"
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "cleaning_names.R",
+          "size_bytes": 9211,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/cleaning_names.R"
+        },
+        {
+          "type": "file",
+          "name": "nccs_analysis.py",
+          "size_bytes": 3894,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/nccs_analysis.py"
+        },
+        {
+          "type": "file",
+          "name": "tests_nccs_master.R",
+          "size_bytes": 10353,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/tests_nccs_master.R"
+        },
+        {
+          "type": "file",
+          "name": "get_nccs_data_newsite.R",
+          "size_bytes": 695,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/get_nccs_data_newsite.R"
+        },
+        {
+          "type": "file",
+          "name": "nccs_cross_maps.R",
+          "size_bytes": 4059,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/nccs_cross_maps.R"
+        },
+        {
+          "type": "file",
+          "name": "snip_sampling.R",
+          "size_bytes": 103,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/snip_sampling.R"
+        },
+        {
+          "type": "file",
+          "name": "finetuning_visualization.R",
+          "size_bytes": 710,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/finetuning_visualization.R"
+        },
+        {
+          "type": "file",
+          "name": "generate_cross_spells_local.R",
+          "size_bytes": 17179,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/generate_cross_spells_local.R"
+        },
+        {
+          "type": "file",
+          "name": "checks_final_temp.R",
+          "size_bytes": 6210,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/checks_final_temp.R"
+        },
+        {
+          "type": "file",
+          "name": "check_demo_newcores.R",
+          "size_bytes": 4229,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/check_demo_newcores.R"
+        },
+        {
+          "type": "file",
+          "name": "states_and_counties.ipynb",
+          "size_bytes": 40152,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/states_and_counties.ipynb"
+        },
+        {
+          "type": "file",
+          "name": "Prep NCCS Core File_1.R",
+          "size_bytes": 17672,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/Prep NCCS Core File_1.R"
+        },
+        {
+          "type": "file",
+          "name": "optimal_batches.py",
+          "size_bytes": 4298,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/optimal_batches.py"
+        },
+        {
+          "type": "file",
+          "name": "explore_laws.R",
+          "size_bytes": 15249,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/explore_laws.R"
+        },
+        {
+          "type": "file",
+          "name": "irs_efilers.R",
+          "size_bytes": 1440,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/irs_efilers.R"
+        },
+        {
+          "type": "file",
+          "name": "generate_early_registers.old.R",
+          "size_bytes": 12511,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/generate_early_registers.old.R"
+        },
+        {
+          "type": "file",
+          "name": "sample_read_f990.sas",
+          "size_bytes": 5969,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/sample_read_f990.sas"
+        },
+        {
+          "type": "file",
+          "name": "nccs_data_summary_graphs.R",
+          "size_bytes": 13622,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/nccs_data_summary_graphs.R"
+        },
+        {
+          "type": "file",
+          "name": "optimal_batch_size_setup.py",
+          "size_bytes": 1825,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/optimal_batch_size_setup.py"
+        },
+        {
+          "type": "file",
+          "name": "explore_financials.R",
+          "size_bytes": 4990,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/explore_financials.R"
+        },
+        {
+          "type": "file",
+          "name": "nccs_analysis.ipynb",
+          "size_bytes": 330610,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/nccs_analysis.ipynb"
+        },
+        {
+          "type": "file",
+          "name": "triangles.R",
+          "size_bytes": 3283,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/triangles.R"
+        },
+        {
+          "type": "file",
+          "name": "graphs_filers.R",
+          "size_bytes": 14821,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/graphs_filers.R"
+        },
+        {
+          "type": "file",
+          "name": "Prep IRS BMF_1.R",
+          "size_bytes": 4905,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/Prep IRS BMF_1.R"
+        },
+        {
+          "type": "file",
+          "name": "create_financials2.R",
+          "size_bytes": 67402,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/tests/create_financials2.R"
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "models",
+      "size_bytes": 0,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/models",
+      "children": [
+        {
+          "type": "folder",
+          "name": "deberta_multilabel_2024-06-08_22-23-30",
+          "size_bytes": 0,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/models/deberta_multilabel_2024-06-08_22-23-30"
+        },
+        {
+          "type": "folder",
+          "name": "deberta_multilabel_2024-06-08_22-26-01",
+          "size_bytes": 0,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/models/deberta_multilabel_2024-06-08_22-26-01"
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "logs",
+      "size_bytes": 878,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/logs",
+      "children": [
+        {
+          "type": "file",
+          "name": "deberta_multilabel_finetuning_2024-06-08_22-23-30.log",
+          "size_bytes": 359,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/logs/deberta_multilabel_finetuning_2024-06-08_22-23-30.log"
+        },
+        {
+          "type": "file",
+          "name": "deberta_multilabel_finetuning_2024-06-08_22-26-01.log",
+          "size_bytes": 519,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/logs/deberta_multilabel_finetuning_2024-06-08_22-26-01.log"
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "renv",
+      "size_bytes": 32887,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/renv",
+      "children": [
+        {
+          "type": "file",
+          "name": "activate.R",
+          "size_bytes": 32831,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/renv/activate.R"
+        },
+        {
+          "type": "file",
+          "name": ".gitignore",
+          "size_bytes": 56,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/renv/.gitignore"
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "wandb",
+      "size_bytes": 149191,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/wandb",
+      "children": [
+        {
+          "type": "folder",
+          "name": "run-20240610_102309-b2h9qsh7",
+          "size_bytes": 76099,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/wandb/run-20240610_102309-b2h9qsh7",
+          "children": [
+            {
+              "type": "folder",
+              "name": "logs",
+              "size_bytes": 73092,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/wandb/run-20240610_102309-b2h9qsh7/logs",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "debug-internal.log",
+                  "size_bytes": 63026,
+                  "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/wandb/run-20240610_102309-b2h9qsh7/logs/debug-internal.log"
+                },
+                {
+                  "type": "file",
+                  "name": "debug.log",
+                  "size_bytes": 10066,
+                  "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/wandb/run-20240610_102309-b2h9qsh7/logs/debug.log"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "files",
+              "size_bytes": 3007,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/wandb/run-20240610_102309-b2h9qsh7/files",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "output.log",
+                  "size_bytes": 3007,
+                  "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/wandb/run-20240610_102309-b2h9qsh7/files/output.log"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "tmp",
+              "size_bytes": 0,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/wandb/run-20240610_102309-b2h9qsh7/tmp",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "code",
+                  "size_bytes": 0,
+                  "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/wandb/run-20240610_102309-b2h9qsh7/tmp/code"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "debug-internal.log",
+          "size_bytes": 63026,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/wandb/debug-internal.log"
+        },
+        {
+          "type": "file",
+          "name": "debug.log",
+          "size_bytes": 10066,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/wandb/debug.log"
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "src",
+      "size_bytes": 425322,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src",
+      "children": [
+        {
+          "type": "folder",
+          "name": "shapes",
+          "size_bytes": 4076,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/shapes",
+          "children": [
+            {
+              "type": "file",
+              "name": "zip_county_matching.R",
+              "size_bytes": 4076,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/shapes/zip_county_matching.R"
             }
           ]
         },
         {
           "type": "folder",
-          "name": "bindings",
-          "size_bytes": 6311,
-          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/bindings",
+          "name": "classifier",
+          "size_bytes": 145946,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/classifier",
           "children": [
             {
               "type": "file",
-              "name": "utils.js",
-              "size_bytes": 6311,
-              "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/bindings/utils.js"
+              "name": "bert_finetuning.py",
+              "size_bytes": 12739,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/classifier/bert_finetuning.py"
+            },
+            {
+              "type": "file",
+              "name": "config.py",
+              "size_bytes": 1419,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/classifier/config.py"
+            },
+            {
+              "type": "file",
+              "name": "classification.py",
+              "size_bytes": 4873,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/classifier/classification.py"
+            },
+            {
+              "type": "file",
+              "name": "utils.py",
+              "size_bytes": 2667,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/classifier/utils.py"
+            },
+            {
+              "type": "file",
+              "name": "preprocessing.py",
+              "size_bytes": 3151,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/classifier/preprocessing.py"
+            },
+            {
+              "type": "file",
+              "name": "classifier_evaluation.ipynb",
+              "size_bytes": 121097,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/classifier/classifier_evaluation.ipynb"
             }
           ]
-        }
-      ]
-    },
-    {
-      "type": "folder",
-      "name": "dir_to_graph",
-      "size_bytes": 25467,
-      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/dir_to_graph",
-      "children": [
+        },
         {
-          "type": "file",
-          "name": "__init__.py",
-          "size_bytes": 82,
-          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/dir_to_graph/__init__.py"
+          "type": "folder",
+          "name": "nccs",
+          "size_bytes": 190920,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/nccs",
+          "children": [
+            {
+              "type": "file",
+              "name": "generate_early_registers.R",
+              "size_bytes": 11887,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/nccs/generate_early_registers.R"
+            },
+            {
+              "type": "file",
+              "name": "download_revised_data.R",
+              "size_bytes": 2583,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/nccs/download_revised_data.R"
+            },
+            {
+              "type": "file",
+              "name": "scrape_nccs_labels.R",
+              "size_bytes": 3075,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/nccs/scrape_nccs_labels.R"
+            },
+            {
+              "type": "file",
+              "name": "clean_IRS_bulks.R",
+              "size_bytes": 3693,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/nccs/clean_IRS_bulks.R"
+            },
+            {
+              "type": "file",
+              "name": "generate_class_labels.R",
+              "size_bytes": 2750,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/nccs/generate_class_labels.R"
+            },
+            {
+              "type": "file",
+              "name": "scrape_nccs_data.R",
+              "size_bytes": 2732,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/nccs/scrape_nccs_data.R"
+            },
+            {
+              "type": "file",
+              "name": "generate_cross_filers.R",
+              "size_bytes": 9138,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/nccs/generate_cross_filers.R"
+            },
+            {
+              "type": "file",
+              "name": "nccs_functions.R",
+              "size_bytes": 5359,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/nccs/nccs_functions.R"
+            },
+            {
+              "type": "file",
+              "name": "f990_NBER_batch.R",
+              "size_bytes": 593,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/nccs/f990_NBER_batch.R"
+            },
+            {
+              "type": "file",
+              "name": "clean_early_registers.R",
+              "size_bytes": 14477,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/nccs/clean_early_registers.R"
+            },
+            {
+              "type": "file",
+              "name": "cross_geocoding.R",
+              "size_bytes": 34532,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/nccs/cross_geocoding.R"
+            },
+            {
+              "type": "file",
+              "name": "generate_filers_panel.R",
+              "size_bytes": 32685,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/nccs/generate_filers_panel.R"
+            },
+            {
+              "type": "file",
+              "name": "financial_reconstruction.R",
+              "size_bytes": 67416,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/nccs/financial_reconstruction.R"
+            }
+          ]
+        },
+        {
+          "type": "folder",
+          "name": "classifier_carolina",
+          "size_bytes": 48253,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/classifier_carolina",
+          "children": [
+            {
+              "type": "file",
+              "name": "finetuning_deberta_local.py",
+              "size_bytes": 8045,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/classifier_carolina/finetuning_deberta_local.py"
+            },
+            {
+              "type": "file",
+              "name": "config.py",
+              "size_bytes": 2356,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/classifier_carolina/config.py"
+            },
+            {
+              "type": "file",
+              "name": "classification.py",
+              "size_bytes": 3884,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/classifier_carolina/classification.py"
+            },
+            {
+              "type": "file",
+              "name": "evaluation.py",
+              "size_bytes": 1689,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/classifier_carolina/evaluation.py"
+            },
+            {
+              "type": "file",
+              "name": "utils.py",
+              "size_bytes": 3043,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/classifier_carolina/utils.py"
+            },
+            {
+              "type": "file",
+              "name": "preprocessing.py",
+              "size_bytes": 4082,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/classifier_carolina/preprocessing.py"
+            }
+          ]
         },
         {
           "type": "file",
-          "name": "core.py",
-          "size_bytes": 8494,
-          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/dir_to_graph/core.py"
+          "name": "spatial_functions.R",
+          "size_bytes": 2842,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/spatial_functions.R"
         },
         {
           "type": "file",
-          "name": "cli.py",
-          "size_bytes": 3923,
-          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/dir_to_graph/cli.py"
-        }
-      ]
-    },
-    {
-      "type": "folder",
-      "name": "folder1",
-      "size_bytes": 104,
-      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/folder1",
-      "children": [
+          "name": ".DS_Store",
+          "size_bytes": 6148,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/.DS_Store"
+        },
         {
           "type": "file",
-          "name": "file_within_folder.py",
-          "size_bytes": 104,
-          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/folder1/file_within_folder.py"
+          "name": "config.R",
+          "size_bytes": 27137,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/src/config.R"
         }
       ]
-    },
-    {
-      "type": "file",
-      "name": "index.html",
-      "size_bytes": 6917,
-      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/index.html"
     },
     {
       "type": "file",
       "name": ".DS_Store",
-      "size_bytes": 8196,
-      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/.DS_Store"
+      "size_bytes": 10244,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/.DS_Store"
     },
     {
       "type": "file",
       "name": "LICENSE",
-      "size_bytes": 1072,
-      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/LICENSE"
+      "size_bytes": 1080,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/LICENSE"
     },
     {
       "type": "file",
       "name": "requirements.txt",
-      "size_bytes": 34,
-      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/requirements.txt"
+      "size_bytes": 1883,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/requirements.txt"
+    },
+    {
+      "type": "file",
+      "name": ".Rprofile",
+      "size_bytes": 1063,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/.Rprofile"
+    },
+    {
+      "type": "file",
+      "name": "dependencies.R",
+      "size_bytes": 193,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/dependencies.R"
     },
     {
       "type": "file",
       "name": "data.json",
-      "size_bytes": 5449,
-      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/data.json"
+      "size_bytes": 22184,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/data.json"
     },
     {
       "type": "file",
       "name": "README.md",
-      "size_bytes": 14,
-      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/README.md"
+      "size_bytes": 5478,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/README.md"
     },
     {
       "type": "file",
       "name": ".gitignore",
-      "size_bytes": 6,
-      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/.gitignore"
+      "size_bytes": 7391,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/.gitignore"
     },
     {
       "type": "file",
-      "name": "app.py",
-      "size_bytes": 1270,
-      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/app.py"
-    },
-    {
-      "type": "file",
-      "name": "main.py",
-      "size_bytes": 314,
-      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/main.py"
+      "name": "renv.lock",
+      "size_bytes": 65102,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/Evangelicals/renv.lock"
     }
   ]
 }
