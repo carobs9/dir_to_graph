@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Folder Graph</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; }
+    header {
+      padding: 12px 16px; border-bottom: 1px solid #ddd;
+      display: flex; gap: 12px; align-items: baseline;
+    }
+    header b { font-size: 16px; }
+    header .hint { color: #666; font-size: 13px; }
+    svg { display: block; margin: 0 auto; }
+    .link { fill: none; stroke: #bbb; stroke-width: 1px; }
+    .node text { font-size: 12px; user-select: none; }
+    .node circle { stroke: #444; stroke-width: 1px; }
+    .tooltip {
+      position: fixed; pointer-events: none;
+      background: rgba(20,20,20,0.92); color: #fff;
+      padding: 6px 8px; border-radius: 8px; font-size: 12px;
+      transform: translate(10px, 10px);
+      max-width: 360px;
+      line-height: 1.2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <b>Folder Graph</b>
+    <div class="hint">Click folders to expand/collapse. Hover for size.</div>
+  </header>
+
+  <svg id="viz" width="1200" height="800"></svg>
+  <div id="tip" class="tooltip" style="display:none;"></div>
+
+  <script>
+    const JSON_PATH = "data.json";
+
+    function formatBytes(bytes) {
+      if (bytes == null || isNaN(bytes)) return "—";
+      const units = ["B","KB","MB","GB","TB"];
+      let b = Number(bytes);
+      let i = 0;
+      while (b >= 1024 && i < units.length - 1) { b /= 1024; i++; }
+      const rounded = (i === 0) ? b.toFixed(0) : b.toFixed(2);
+      return `${rounded} ${units[i]}`;
+    }
+
+    function isFolder(d) {
+      return d.data?.type === "folder";
+    }
+
+    async function main() {
+      const raw = await fetch(JSON_PATH).then(r => r.json());
+
+      const svg = d3.select("#viz");
+      const tip = d3.select("#tip");
+      svg.selectAll("*").remove();
+
+      const width = +svg.attr("width");
+      const height = +svg.attr("height");
+
+      const margin = { top: 20, right: 40, bottom: 20, left: 120 };
+      const innerW = width - margin.left - margin.right;
+      const innerH = height - margin.top - margin.bottom;
+
+      const g = svg.append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+      // Convert to hierarchy (your JSON already uses children)
+      const root = d3.hierarchy(raw);
+
+      // Compute totals for folders if not present (optional but nice)
+      root.sum(d => d.size_bytes || 0);
+
+      // Initial positions
+      root.x0 = innerH / 2;
+      root.y0 = 0;
+
+      // Collapse everything below depth 1 for readability
+      root.children?.forEach(collapse);
+
+      function collapse(d) {
+        if (d.children) {
+          d._children = d.children;
+          d._children.forEach(collapse);
+          d.children = null;
+        }
+      }
+
+      // Node size scaling: log scale based on size
+      const sizes = root.descendants().map(d => d.data.size_bytes || 0);
+      const maxSize = Math.max(...sizes, 1);
+      const rScale = d3.scaleLog()
+        .domain([1, maxSize])
+        .range([4, 14]);
+
+      const tree = d3.tree().size([innerH, innerW]);
+
+      function diagonal(d) {
+        // nice curved links
+        return `M${d.source.y},${d.source.x}
+                C${(d.source.y + d.target.y)/2},${d.source.x}
+                 ${(d.source.y + d.target.y)/2},${d.target.x}
+                 ${d.target.y},${d.target.x}`;
+      }
+
+      function update(source) {
+        const duration = 250;
+
+        tree(root);
+
+        const nodes = root.descendants();
+        const links = root.links();
+
+        // horizontal spacing by depth
+        nodes.forEach(d => d.y = d.depth * 180);
+
+        // --- LINKS ---
+        const link = g.selectAll("path.link")
+          .data(links, d => d.target.data.id + ":" + d.target.depth);
+
+        link.join(
+          enter => enter.append("path")
+            .attr("class", "link")
+            .attr("d", () => {
+              const o = { x: source.x0, y: source.y0 };
+              return diagonal({ source: o, target: o });
+            }),
+          update => update,
+          exit => exit.remove()
+        )
+        .transition().duration(duration)
+          .attr("d", diagonal);
+
+        // --- NODES ---
+        const node = g.selectAll("g.node")
+          .data(nodes, d => d.data.id + ":" + d.depth);
+
+        const nodeEnter = node.enter().append("g")
+          .attr("class", "node")
+          .attr("transform", () => `translate(${source.y0},${source.x0})`)
+          .style("cursor", d => isFolder(d) ? "pointer" : "default")
+          .on("click", (event, d) => {
+            if (!isFolder(d)) return;
+            if (d.children) { d._children = d.children; d.children = null; }
+            else { d.children = d._children; d._children = null; }
+            update(d);
+          })
+          .on("mousemove", (event, d) => {
+            const bytes = d.data.size_bytes ?? d.value ?? 0;
+            const kind = isFolder(d) ? "Folder" : "File";
+            const label = d.data.name ?? d.data.id ?? "(no name)";
+            const fullPath = d.data.id ?? "(no id)";
+            const shownBytes = Number.isFinite(bytes) ? bytes : 0;
+
+            tip.style("display", "block")
+              .style("left", `${event.clientX}px`)
+              .style("top", `${event.clientY}px`)
+              .html(`
+                <div><b>${kind}:</b> ${label}</div>
+                <div style="opacity:.8">${fullPath}</div>
+                <div><b>Size:</b> ${formatBytes(shownBytes)} (${shownBytes} bytes)</div>
+                <div style="opacity:.8">Depth: ${d.depth}${isFolder(d) ? (d.children || d._children ? "" : " (empty)") : ""}</div>
+              `);
+          })
+          .on("mouseleave", () => tip.style("display", "none"));
+
+        nodeEnter.append("circle")
+          .attr("r", 1e-6)
+          .attr("fill", d => isFolder(d) ? "#9ccfd8" : "#f6c177");
+
+        nodeEnter.append("text")
+          .attr("dy", "0.35em")
+          .attr("x", d => (d.children || d._children) ? -12 : 12)
+          .attr("text-anchor", d => (d.children || d._children) ? "end" : "start")
+          .text(d => d.data.name ?? d.data.id);
+
+        const nodeUpdate = nodeEnter.merge(node);
+
+        nodeUpdate.transition().duration(duration)
+          .attr("transform", d => `translate(${d.y},${d.x})`);
+
+        nodeUpdate.select("circle").transition().duration(duration)
+          .attr("r", d => {
+            const b = d.data.size_bytes ?? d.value ?? 1;
+            const val = Math.max(1, Number(b) || 1);
+            return rScale(val);
+          });
+
+        node.exit().transition().duration(duration)
+          .attr("transform", () => `translate(${source.y},${source.x})`)
+          .remove()
+          .select("circle")
+          .attr("r", 1e-6);
+
+        // Stash old positions
+        nodes.forEach(d => { d.x0 = d.x; d.y0 = d.y; });
+      }
+
+      update(root);
+    }
+
+    main();
+  </script>
+</body>
+</html>

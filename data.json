@@ -1,0 +1,186 @@
+{
+  "type": "folder",
+  "name": "dir_to_graph",
+  "size_bytes": 185450315,
+  "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph",
+  "children": [
+    {
+      "type": "folder",
+      "name": "folder2",
+      "size_bytes": 9,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/folder2",
+      "children": [
+        {
+          "type": "folder",
+          "name": "folder_within_folder",
+          "size_bytes": 9,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/folder2/folder_within_folder",
+          "children": [
+            {
+              "type": "file",
+              "name": "child_of_child.json",
+              "size_bytes": 9,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/folder2/folder_within_folder/child_of_child.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "lib",
+      "size_bytes": 749391,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib",
+      "children": [
+        {
+          "type": "folder",
+          "name": "tom-select",
+          "size_bytes": 54104,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/tom-select",
+          "children": [
+            {
+              "type": "file",
+              "name": "tom-select.complete.min.js",
+              "size_bytes": 44776,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/tom-select/tom-select.complete.min.js"
+            },
+            {
+              "type": "file",
+              "name": "tom-select.css",
+              "size_bytes": 9328,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/tom-select/tom-select.css"
+            }
+          ]
+        },
+        {
+          "type": "folder",
+          "name": "vis-9.1.2",
+          "size_bytes": 688976,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/vis-9.1.2",
+          "children": [
+            {
+              "type": "file",
+              "name": "vis-network.min.js",
+              "size_bytes": 468813,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/vis-9.1.2/vis-network.min.js"
+            },
+            {
+              "type": "file",
+              "name": "vis-network.css",
+              "size_bytes": 220163,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/vis-9.1.2/vis-network.css"
+            }
+          ]
+        },
+        {
+          "type": "folder",
+          "name": "bindings",
+          "size_bytes": 6311,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/bindings",
+          "children": [
+            {
+              "type": "file",
+              "name": "utils.js",
+              "size_bytes": 6311,
+              "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/lib/bindings/utils.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "dir_to_graph",
+      "size_bytes": 25467,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/dir_to_graph",
+      "children": [
+        {
+          "type": "file",
+          "name": "__init__.py",
+          "size_bytes": 82,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/dir_to_graph/__init__.py"
+        },
+        {
+          "type": "file",
+          "name": "core.py",
+          "size_bytes": 8494,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/dir_to_graph/core.py"
+        },
+        {
+          "type": "file",
+          "name": "cli.py",
+          "size_bytes": 3923,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/dir_to_graph/cli.py"
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "folder1",
+      "size_bytes": 104,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/folder1",
+      "children": [
+        {
+          "type": "file",
+          "name": "file_within_folder.py",
+          "size_bytes": 104,
+          "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/folder1/file_within_folder.py"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "index.html",
+      "size_bytes": 6917,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/index.html"
+    },
+    {
+      "type": "file",
+      "name": ".DS_Store",
+      "size_bytes": 8196,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/.DS_Store"
+    },
+    {
+      "type": "file",
+      "name": "LICENSE",
+      "size_bytes": 1072,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/LICENSE"
+    },
+    {
+      "type": "file",
+      "name": "requirements.txt",
+      "size_bytes": 34,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/requirements.txt"
+    },
+    {
+      "type": "file",
+      "name": "data.json",
+      "size_bytes": 5449,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/data.json"
+    },
+    {
+      "type": "file",
+      "name": "README.md",
+      "size_bytes": 14,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/README.md"
+    },
+    {
+      "type": "file",
+      "name": ".gitignore",
+      "size_bytes": 6,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/.gitignore"
+    },
+    {
+      "type": "file",
+      "name": "app.py",
+      "size_bytes": 1270,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/app.py"
+    },
+    {
+      "type": "file",
+      "name": "main.py",
+      "size_bytes": 314,
+      "id": "/Users/caro/Desktop/GITHUB-REPOS/dir_to_graph/main.py"
+    }
+  ]
+}
