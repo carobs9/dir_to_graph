@@ -7,7 +7,7 @@
 ▀████ ██▄ ██          ██   ▀███▀       ▀████ ██    ▀█▄██ ████▀ ██ ██ 
                                           ██             ██          
                                         ▀▀▀              ▀▀    
-                                        
+
 Visualize any folder on your machine as an interactive tree in the browser.
 
 This project provides:
@@ -133,3 +133,7 @@ This is useful if you want to embed the directory graph in another application o
 - The project is experimental; APIs and output format may change.
 
 Contributions and ideas for new visualizations are welcome.
+
+## Future Ideas
+
+- I am developing an LLM to be able to ask interactively regarding the organization of the folders and files, and potentially their contents.
