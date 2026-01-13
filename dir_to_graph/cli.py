@@ -26,7 +26,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         default=None,
         help=(
             "Directory where data.json is written. "
-            "Defaults to the analyzed directory."
+            "Defaults to the current working directory (e.g. your dir_to_graph repo)."
         ),
     )
 
@@ -67,7 +67,11 @@ def main(argv: list[str] | None = None) -> None:
                                         ▀▀▀              ▀▀          
 """
     print(BANNER)
-    print("Welcome to dir-to-graph! This project allows you to visualize directory structures as interactive graphs.")
+
+    print("═════════════════════════════════════════════════════════════════════════════════════════════════════════")
+    print("Welcome! This project allows you to visualize directory structures as interactive graphs.")
+    print("═════════════════════════════════════════════════════════════════════════════════════════════════════════")
+    print()
     print("This is still an experimental tool; please report any issues you encounter. Directories containing many big files may take a while to process.")
     print("Now, I will analyze your directory and generate the visualization data...")
     print()
@@ -80,7 +84,9 @@ def main(argv: list[str] | None = None) -> None:
 
     ignore = args.ignore if args.ignore is not None else DEFAULT_IGNORES # set ignore list
 
-    output_dir = os.path.abspath(args.output_dir or target_dir) # determine output directory
+    # By default, write data.json into the current working directory
+    # (typically your dir_to_graph repo where index.html lives).
+    output_dir = os.path.abspath(args.output_dir or os.getcwd()) # determine output directory
     out_path = write_tree_json( # write tree JSON to disk
         target_dir, # analyze provided target directory
         output_dir=output_dir, # store in the provided output directory
