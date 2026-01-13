@@ -1,12 +1,6 @@
 # dir_to_graph
 
-                                                               ▄▄    
-   ██ ▀▀              ██                                       ██    
-▄████ ██  ████▄      ▀██▀▀ ▄███▄       ▄████ ████▄  ▀▀█▄ ████▄ ████▄ 
-██ ██ ██  ██ ▀▀ ▀▀▀▀▀ ██   ██ ██ ▀▀▀▀▀ ██ ██ ██ ▀▀ ▄█▀██ ██ ██ ██ ██ 
-▀████ ██▄ ██          ██   ▀███▀       ▀████ ██    ▀█▄██ ████▀ ██ ██ 
-                                          ██             ██          
-                                        ▀▀▀              ▀▀    
+![dir_to_graph_logo](assets/dir_to_graph.png)
 
 Visualize any folder on your machine as an interactive tree in the browser.
 
