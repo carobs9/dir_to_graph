@@ -190,7 +190,7 @@ def write_tree_json(
     """
     print("[INFO] Saving JSON file. This may take a while for large directories...")
     if output_dir is None:
-        output_dir = dir_of_interest
+        output_dir = os.cwd() # use current working directory if none provided
 
     output_dir = os.path.abspath(output_dir)
     os.makedirs(output_dir, exist_ok=True)
