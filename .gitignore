@@ -1,2 +1,9 @@
 .venv
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*.DS_Store
+
+# Generated visualization data
 data.json

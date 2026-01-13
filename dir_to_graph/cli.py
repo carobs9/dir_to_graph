@@ -69,16 +69,20 @@ def main(argv: list[str] | None = None) -> None:
     print(BANNER)
 
     print("═════════════════════════════════════════════════════════════════════════════════════════════════════════")
+    print()
     print("Welcome! This project allows you to visualize directory structures as interactive graphs.")
+    print("This is still an experimental tool; please report any issues you encounter.")
+    print("Directories containing many big files may take a while to process.")
+    print()
     print("═════════════════════════════════════════════════════════════════════════════════════════════════════════")
-    print()
-    print("This is still an experimental tool; please report any issues you encounter. Directories containing many big files may take a while to process.")
-    print("Now, I will analyze your directory and generate the visualization data...")
-    print()
 
     args = parse_args(argv) # parse command-line arguments
-
     target_dir = os.path.abspath(args.path) # get absolute path of target directory
+
+    print()
+    print(f"Now, I will analyze your directory ({target_dir}) and generate the visualization data...")
+    print()
+
     if not os.path.isdir(target_dir): # check if target path is a directory
         raise SystemExit(f"Not a directory: {target_dir}") # if not a directory, exit with error
 
@@ -98,9 +102,8 @@ def main(argv: list[str] | None = None) -> None:
     print(f"[INFO] Wrote directory structure as a JSON: {out_path}")
     print()
     print("Next steps:")
-    print(f"  1.  cd {output_dir}")
-    print("  2.  python -m http.server 8000")
-    print("  3.  Open http://localhost:8000/index.html in your browser")
+    print("  1.  python -m http.server 8000")
+    print("  2.  Open http://localhost:8000/index.html in your browser")
 
 
 if __name__ == "__main__": 

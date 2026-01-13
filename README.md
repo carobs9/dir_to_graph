@@ -8,6 +8,29 @@ This project provides:
 
 The graph shows folders and files, with node size roughly proportional to size on disk.
 
+## Getting the code (fork & clone)
+
+The easiest way to use dir_to_graph on your own machine is to fork this repository and clone your fork locally.
+
+1. On GitHub, go to: https://github.com/carobs9/dir_to_graph
+2. Click **Fork** to create your own copy under your account.
+3. Clone your fork:
+
+	```bash
+	git clone https://github.com/<your-username>/dir_to_graph.git
+	cd dir_to_graph
+	```
+
+4. (Optional but recommended) Create and activate a virtual environment, then install dependencies:
+
+	```bash
+	python -m venv .venv
+	source .venv/bin/activate  # on macOS/Linux
+	# .venv\Scripts\activate  # on Windows
+
+	pip install -r requirements.txt
+	```
+
 ## Requirements
 
 Python 3.10+ and a few Python libraries:
@@ -19,19 +42,15 @@ pip install -r requirements.txt
 `requirements.txt` currently includes:
 
 - networkx
-- matplotlib
-- graphviz
 - numpy
-
-> Note: the core CLI only needs `networkx` and `numpy`; the others are used in notebooks and experiments.
 
 ## Basic usage (from source)
 
-From the repository root:
+From the repository root (inside your forked/checked-out dir_to_graph):
 
 ```bash
-cd /Users/caro/Desktop/GITHUB-REPOS/dir_to_graph
-python main.py /path/to/your/directory -o .
+cd dir_to_graph
+python main.py /path/to/your/directory
 ```
 
 What this does:
@@ -39,16 +58,15 @@ What this does:
 - runs the CLI banner and help text
 - walks `/path/to/your/directory` (recursively)
 - builds a tree representation with per‑node metadata
-- writes a D3‑friendly JSON file named `data.json` into the output directory (`-o .` = current directory)
+- writes a D3‑friendly JSON file named `data.json` into the output directory (default = dir_to_graph directory)
 
 You should see a message like:
 
 ```text
 [INFO] Wrote directory structure as a JSON: /…/dir_to_graph/data.json
 Next steps:
-	1.  cd /…/dir_to_graph
-	2.  python -m http.server 8000
-	3.  Open http://localhost:8000/index.html in your browser
+	1.  python -m http.server 8000
+	2.  Open http://localhost:8000/index.html in your browser
 ```
 
 Then follow those steps to start a local web server and open the visualization.
