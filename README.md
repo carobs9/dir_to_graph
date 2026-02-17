@@ -74,7 +74,7 @@ Then follow those steps to start a local web server and open the visualization.
 To end the local web server, simply type the following command in the terminal:
 
 ```text
-Control + C
+Ctrl + C
 ```
 
 You can now close the local host in your browser.
