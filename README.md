@@ -71,6 +71,14 @@ Next steps:
 
 Then follow those steps to start a local web server and open the visualization.
 
+To end the local web server, simply type the following command in the terminal:
+
+```text
+Control + C
+```
+
+You can now close the local host in your browser.
+
 ## CLI options
 
 The CLI entrypoint is implemented in [dir_to_graph/cli.py](dir_to_graph/cli.py) and exposed via `main.py`.
